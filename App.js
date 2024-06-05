@@ -17,13 +17,33 @@ export default function App() {
   return (
     <View style={{ flex: 1 }}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
-          <Stack.Screen name="Home" component={HomePage} />
-          <Stack.Screen name="Payments" component={PaymentsPage} />
-          <Stack.Screen name="Profile" component={ProfilePage} />
-          <Stack.Screen name="History" component={HistoryPage} />
-          <Stack.Screen name="More" component={MorePage} />
-        </Stack.Navigator>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen
+          name="Home"
+          component={HomePage}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Payments"
+          component={PaymentsPage}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Profile"
+          component={ProfilePage}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="History"
+          component={HistoryPage}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="More"
+          component={MorePage}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
         <View style={styles.navigation}>
           <NavBar />
         </View>
