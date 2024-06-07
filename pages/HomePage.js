@@ -4,17 +4,6 @@ import { View, Text, Image, StyleSheet, SafeAreaView } from 'react-native';
 const HomePage = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <View style={styles.container}>
-        <Image source={require('../assets/icons/Account.png')} style={styles.leftIcon} />
-        <View style={styles.textContainer}>
-          <Text style={styles.smallGrayText}>2021.03.04</Text>
-          <Text style={styles.bigText}>Hi, John</Text>
-        </View>
-        <View style={styles.rightIconsContainer}>
-          <Image source={require('../assets/icons/Notification.png')} />
-          <Image source={require('../assets/icons/Help.png')} style={styles.helpIcon} />
-        </View>
-      </View>
       <View style={styles.cardContainer}>
         <View style={styles.card}>
           <Text style={styles.cardText}>¥210.430</Text>
@@ -83,40 +72,10 @@ const HomePage = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: 15,
-    paddingTop: 45,
-  },
-  textContainer: {
-    flex: 1,
-    marginLeft: 10,
-    marginRight: 10,
-  },
-  leftIcon: {
-    width: 24,
-    height: 24,
-  },
-  rightIconsContainer: {
-    flexDirection: 'row',
-  },
-  helpIcon: {
-    width: 24,
-    height: 24,
-    marginLeft: 10,
-  },
-  smallGrayText: {
-    fontSize: 12,
-    color: 'gray',
-  },
-  bigText: {
-    fontSize: 16,
-  },
   cardContainer: {
     flex: 1,
     alignItems: 'center',
+    marginTop: 20,
   },
   card: {
     backgroundColor: 'black',

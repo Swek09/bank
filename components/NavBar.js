@@ -9,23 +9,23 @@ const NavBar = () => {
     <View style={styles.navBar}>
       <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Home')}>
         <Image source={require('../assets/icons/coffee.png')} style={styles.navIcon} />
-        <Text style={styles.navText}>Главная</Text>
+        <Text style={styles.navText}>Home</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Payments')}>
         <Image source={require('../assets/icons/arrow-left-right.png')} style={styles.navIcon} />
-        <Text style={styles.navText}>Платежи</Text>
+        <Text style={styles.navText}>Payments</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Profile')}>
+      <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Savings')}>
         <Image source={require('../assets/icons/user-check.png')} style={styles.navIcon} />
-        <Text style={styles.navText}>Профиль</Text>
+        <Text style={styles.navText}>Savings</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('History')}>
         <Image source={require('../assets/icons/clock-circle.png')} style={styles.navIcon} />
-        <Text style={styles.navText}>История</Text>
+        <Text style={styles.navText}>History</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('More')}>
         <Image source={require('../assets/icons/lock-password.png')} style={styles.navIcon} />
-        <Text style={styles.navText}>Еще</Text>
+        <Text style={styles.navText}>More</Text>
       </TouchableOpacity>
     </View>
   );
